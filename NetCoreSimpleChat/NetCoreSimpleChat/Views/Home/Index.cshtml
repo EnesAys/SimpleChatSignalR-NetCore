@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@*Comment out because referenced in Shared/Layout*@
+
+@*<script src="~/lib/signalr/signalr.js"></script>
+<script src="~/js/chat.js"></script>*@
+
+<div class="container">
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-6">&nbsp;</div>
+        <div class="col-6">
+            Kullanıcı : <input type="text" id="userInput" /> @*For User value input*@
+            <br />
+            Mesajınız : <input type="text" id="messageInput" /> @*For Message value input*@
+            <br />
+            <input type="button" id="sendButton" value="Send Message" /> @*This button invoke chathub/SendMessage function via wwwroot/js/chatjs*@ 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">&nbsp;</div>
+        <div class="col-6">
+            <ul id="messagesList"></ul>
+        </div>
+    </div>
+</div>
